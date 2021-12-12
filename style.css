@@ -1,0 +1,345 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('img/hlix.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-attachment: fixed;
+}
+
+nav {
+    width: 100%;
+    height: 80px;
+    color: rgb(221, 221, 221);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 80px;
+    position: fixed;
+    top: 0;
+    background: rgb(0, 0, 0);
+    z-index: 1;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    font-family: sans-serif;
+    font-size: 2.5em;
+}
+
+.logo span {
+    color: #e74c3c;
+}
+
+.menu a {
+    text-decoration: none;
+    color: rgb(221, 221, 221);
+    font-size: 20px;
+    padding: 10px 20px;
+    font-family: sans-serif;
+}
+
+.menu a:first-child {
+    color: #e74c3c;
+}
+
+.menu a:hover {
+    color: #e74c3c;
+    transition: 0.4s;
+}
+
+.icon i {
+    font-size: 20px;
+}
+
+.icon i:hover {
+    color: #e74c3c;
+}
+
+.btn a {
+    padding: 10px 20px;
+    background: #e74c3c;
+    color: rgb(221, 221, 221);
+    text-decoration: none;
+    margin-left: 30px;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: transparent;
+    border: 1px solid #e74c3c;
+    color: rgb(221, 221, 221);
+    transition: 0.4s ease;
+}
+
+.h-text {
+    max-width: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(221, 221, 221);
+    text-align: center;
+}
+
+.h-text h1 {
+    font-family: sans-serif;
+    font-size: 7.5em;
+    line-height: 1.5em;
+}
+
+.filter-gallery {
+    padding: 100px;
+    background-color: black;
+}
+
+.portfolio-item {
+    width: 100%;
+    align-items: center;
+}
+
+.portfolio-item .item {
+    width: 360px;
+    height: 360px;
+    float: left;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    box-shadow: 0px 0px 10px rgba(207, 207, 207, 0.2);
+    border-radius: 40px;
+}
+
+.portfolio-item .item img {
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+}
+
+.members {
+    font-family: sans-serif;
+    width: 100%;
+    padding: 20px 100px;
+    background-color: black;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.m-images {
+    width: 100%;
+    display: flex;
+    margin: 20px 0px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(207, 207, 207, 0.2);
+}
+
+.m-images img {
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.m-images img:hover {
+    transform: scale(1.5);
+}
+
+footer {
+    background: #262626;
+    color: white;
+    width: 100%;
+    padding: 50px 100px;
+    background-color: black;
+}
+
+.f-contact {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 3em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: black;
+}
+
+.f-contact>div {
+    flex-basis: 20%;
+}
+
+.f-contact p {
+    line-height: 2em;
+    font-size: 20px;
+    color: grey;
+    cursor: pointer;
+}
+
+.f-contact p:hover {
+    color: #e74c3c;
+}
+
+.info {
+    height: 63vh;
+    width: 53vh;
+    box-shadow: 0px 0px 10px rgba(207, 207, 207, 0.2);
+    display: flex;
+    border-radius: 40px;
+    margin-top: 2px;
+    margin-bottom: 22px;
+    justify-content: center;
+    color: rgb(221, 221, 221);
+    padding: 30px;
+    font-size: 20px;
+    min-width: 525;
+}
+
+.one {
+    display: flex;
+    line-height: 2em;
+    font-size: 20px;
+    color: grey;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.one:hover {
+    color: #e74c3c;
+}
+
+#preloader {
+    background: black url('img/loader.gif') no-repeat center;
+    background-size: 15%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+.h-text span {
+    display: inline-block;
+    position: relative;
+    padding: 0 2px;
+}
+
+.h-text span::after {
+    content: attr(data-shaking-text);
+    position: absolute;
+    left: 2px;
+    top: 0;
+    -webkit-animation: vibrateAnim 0.1s linear infinite;
+    animation: vibrateAnim 0.1s linear infinite;
+}
+
+@-webkit-keyframes vibrateAnim {
+    0% {
+        left: 1px;
+    }
+    25% {
+        left: 0;
+    }
+    50% {
+        left: 1px;
+    }
+    75% {
+        left: 0;
+    }
+    100% {
+        left: 2px;
+    }
+}
+
+@keyframes vibrateAnim {
+    0% {
+        left: 1px;
+    }
+    25% {
+        left: 0;
+    }
+    50% {
+        left: 1px;
+    }
+    75% {
+        left: 0;
+    }
+    100% {
+        left: 2px;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 640px) {
+    .logo {
+        font-size: 1.5em;
+    }
+    .menu a {
+        font-size: 15px;
+    }
+    .icon i {
+        font-size: 5px;
+        margin-top: -10px;
+    }
+    .icon {
+        font-size: 15px;
+        height: 35px;
+    }
+    .h-text h1 {
+        font-size: 5em;
+    }
+    .info span {
+        font-size: 1.25em;
+        font-size: 10px !important;
+    }
+    .fot a {
+        font-size: 15px;
+    }
+    .fot p {
+        font-size: 12px;
+    }
+    .fot h1 {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 1279px) {
+    .logo {
+        font-size: 1.5em;
+    }
+    .menu a {
+        font-size: 15px;
+    }
+    .icon i {
+        font-size: 5px;
+        margin-top: -10px;
+    }
+    .icon {
+        font-size: 15px;
+        height: 35px;
+    }
+    .h-text h1 {
+        font-size: 5em;
+    }
+    .info span {
+        font-size: 1.25em;
+        font-size: 10px !important;
+    }
+    .fot a {
+        font-size: 15px;
+    }
+    .fot p {
+        font-size: 12px;
+    }
+    .fot h1 {
+        font-size: 12px;
+    }
+}
+
+
+/* End of CSS */
