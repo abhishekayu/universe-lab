@@ -275,6 +275,10 @@ footer {
 }
 
 @media (min-width: 300px) and (max-width: 640px) {
+    .info {
+        width: auto !important;
+        height: auto !important;
+    }
     .logo {
         font-size: 1.5em;
     }
@@ -308,6 +312,10 @@ footer {
 }
 
 @media (min-width: 300px) and (max-width: 1279px) {
+     .info {
+        width: auto !important;
+        height: auto !important;
+    }
     .logo {
         font-size: 1.5em;
     }
