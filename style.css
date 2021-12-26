@@ -234,8 +234,8 @@ footer {
     position: absolute;
     left: 2px;
     top: 0;
-    -webkit-animation: vibrateAnim 0.1s linear infinite;
-    animation: vibrateAnim 0.1s linear infinite;
+    -webkit-animation: vibrateAnim 1s infinite;
+    animation: vibrateAnim 1s infinite;
 }
 
 @-webkit-keyframes vibrateAnim {
