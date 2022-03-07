@@ -1,6 +1,8 @@
 # universe-lab
 The Universe Lab is the informative gallery of universe it is  representing and describe some massive objects of the universe.
 
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fimdarkcoder%2Funiverse-lab&count_bg=%23151C10&title_bg=%23495F3A&icon=github.svg&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
+
 ![github](https://user-images.githubusercontent.com/64314222/93706374-380d5580-fb43-11ea-8a99-3a6827940e64.gif)
 ```
 HTML
